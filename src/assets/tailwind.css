@@ -1,0 +1,53 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@700&display=swap');
+
+@layer utilities {
+  :root {
+    --primary-color: #253147;
+    --secondary-color: #1c2536;
+    --key-color: #e1970a;
+  }
+
+  * {
+    color: white;
+  }
+
+  .maven {
+    font-family: 'Maven Pro';
+  }
+
+  .bg-freBlue {
+    background: #1c2536;
+  }
+
+  .text-freBlue {
+    color: #1c2536;
+  }
+
+  .button {
+    max-width: 50%;
+    max-width: max-content;
+    background-color: var(--key-color);
+    border-radius: 20px;
+  }
+
+  .main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  header {
+    width: 100%;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
