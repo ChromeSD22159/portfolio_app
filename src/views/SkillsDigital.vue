@@ -1,10 +1,10 @@
 <template>
-  <div class="SkillsDigital main">
+  <div class="SkillsDigital main mx-6 sm:mx-0">
     <h2 class="mb-10 maven">
       My digital skills
     </h2>
 
-    <div class="mb-10 w-8/12">
+    <div class="mb-10 sm:w-8/12 w-full">
       <Skill name="Adobe Photoshop" stars="5" />
       <Skill name="Adobe InDesign" stars="5" />
       <Skill name="Adobe Illustrator" stars="5" />
@@ -13,7 +13,7 @@
       <Skill name="Affinity Publisher" stars="5" />
     </div>
 
-    <div class="flex w-full">
+    <div class="flex w-full justify-between">
       <ButtonArrow link="/explore" title="Explore!" icon="ArrowRight" />
       <ButtonArrow link="/resume" title="Resume!" icon="ArrowRight" />
     </div>

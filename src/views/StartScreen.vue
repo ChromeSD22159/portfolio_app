@@ -1,5 +1,5 @@
 <template>
-  <div class="StartScreen main">
+  <div class="StartScreen main mx-6 sm:mx-0">
     <div class="my-10 flex space-x-4 flex-col sm:flex-row">
       <div class="left flex-1">
         <div class="p-4">
@@ -24,7 +24,7 @@ const words = ['Hallo', 'Hola', 'Servus', 'Grüezi', 'Aloha', 'Hoi', 'Moin']
 export default {
   data: function () {
     return {
-      word: '',
+      word: 'hey',
     }
   },
   name: 'StartScreen',
@@ -34,14 +34,15 @@ export default {
   methods: {
     updateWord: function () {
       setInterval(() => {
-        this.word = words[Math.floor(Math.random() * words.length)]
-      }, 4000)
+        let formel = (Math.random() * (words.length + 1) * 100) / 100,
+          flor = Math.floor(formel)
+        this.word = words[flor]
+      }, 2000)
 
       return
     },
   },
   mounted: function () {
-    this.word = words[1]
     this.updateWord()
   },
 }

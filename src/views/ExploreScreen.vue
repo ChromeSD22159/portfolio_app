@@ -1,5 +1,5 @@
 <template>
-  <div class="OverflowScreen main">
+  <div class="OverflowScreen main mx-6 sm:mx-0">
     <h2 class="mb-10 maven">
       I`m a Frontend Developer &
       <br class="sm:visible" />
@@ -23,7 +23,7 @@
         icon="ArrowRight"
       />
     </div>
-    <div class="flex w-full">
+    <div class="flex w-full justify-between">
       <IconLink link="/" icon="home" />
       <ButtonArrow link="/resume" title="Resume!" icon="ArrowRight" />
     </div>

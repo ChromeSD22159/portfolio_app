@@ -1,11 +1,11 @@
 <template>
-  <div class="SkillsPrint main">
+  <div class="SkillsPrint main mx-6 sm:mx-0">
     <h2 class="mb-10 maven">
       My print skills
       <br class="sm:visible" />
     </h2>
 
-    <div class="mb-10 w-8/12">
+    <div class="mb-10 sm:w-8/12 w-full">
       <Skill name="HTML" stars="5" />
       <Skill name="CSS" stars="4" />
       <Skill name="php" stars="4" />
@@ -18,7 +18,7 @@
       <Skill name="Uikit" stars="2" />
       <Skill name="WordPress" stars="2" />
     </div>
-    <div class="flex w-full">
+    <div class="flex w-full justify-between">
       <ButtonArrow link="/explore" title="Explore!" icon="ArrowRight" />
       <ButtonArrow link="/resume" title="Resume!" icon="ArrowRight" />
     </div>

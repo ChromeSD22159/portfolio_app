@@ -1,15 +1,21 @@
 <template>
-  <div class="ResumeScreen main">
+  <div class="ResumeScreen main mx-6 sm:mx-0">
     <h2 class="my-10 maven">
       Check out my resume!
     </h2>
-    <div class="flex w-full">
-      <ButtonArrow link="/explore" title="explore!" icon="ArrowRight" />
+    <div class="flex w-full sm:justify-center flex-col sm:flex-row">
       <ButtonArrow
-        link="/cv"
+        link="/explore"
+        title="explore!"
+        icon="ArrowRight"
+        class="mb-10 sm:mt-0 mr-2"
+      />
+      <ButtonArrow
+        :link="lebenslauf"
         title="Download!"
         icon="Download"
         target="_blank"
+        class="sm:ml-2"
       />
     </div>
   </div>
@@ -17,10 +23,17 @@
 
 <script>
 import ButtonArrow from '@/components/ButtonArrow.vue'
+
 export default {
   name: 'ResumeScreen',
   components: {
     ButtonArrow,
+  },
+  data: function () {
+    return {
+      lebenslauf:
+        'https://github.com/ChromeSD22159/portfolio_app/blob/main/src/assets/download/resume_frederikkohler.pdf',
+    }
   },
 }
 </script>

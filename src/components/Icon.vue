@@ -1,13 +1,13 @@
 <template>
-  <ul class="flex">
-    <li v-for="n in getNum()" v-bind:key="n">
+  <sequential-entrance fromRight tag="ul" animation="fadeInRightBig">
+    <li v-for="n in getNum()" v-bind:key="n" class="mr-2">
       <img
         :src="require('@/assets/images/' + icon + '.svg')"
         type="image/svg+xml"
-        alt=""
+        alt="star"
       />
     </li>
-  </ul>
+  </sequential-entrance>
 </template>
 
 <script>
@@ -32,5 +32,12 @@ export default {
 <style scoped>
 img {
   height: 20px;
+}
+
+ul {
+  display: flex;
+}
+li:last-child {
+  margin-right: 0;
 }
 </style>

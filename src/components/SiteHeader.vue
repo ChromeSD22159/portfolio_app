@@ -1,4 +1,3 @@
-/**/
 <template>
   <header class="flex p-10">
     <div class="left flex-1 flex justify-start">
@@ -12,27 +11,36 @@
       </router-link>
     </div>
     <div class="right flex-1 flex justify-end">
-      <nav @click.stop="myFilter">
+      <nav v-on:click="toogleNav">
         <div class="burger top"></div>
         <div class="burger mid"></div>
         <div class="burger bottom"></div>
       </nav>
     </div>
+    <transition name="fade">
+      <BurgerMenu :routes="routes" v-show="MobileNav" @CloseNav="toogleNav" />
+    </transition>
   </header>
 </template>
 
 <script>
+import BurgerMenu from '@/components/BurgerMenu.vue'
 export default {
   name: 'SiteHeader',
-
+  components: { BurgerMenu },
   data: function () {
     return {
-      isActive: false,
+      MobileNav: false,
+      routes: [
+        { name: 'Home', url: '' },
+        { name: 'Explore', url: 'explore' },
+        { name: 'Contact', url: 'contact' },
+      ],
     }
   },
   methods: {
-    myFilter: function () {
-      this.isActive = !this.isActive
+    toogleNav: function () {
+      this.MobileNav = !this.MobileNav
     },
   },
 }

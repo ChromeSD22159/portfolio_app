@@ -2,6 +2,7 @@
   <div id="app">
     <div class="container mx-auto lg:px-0">
       <SiteHeader />
+
       <transition name="fade" mode="out-in">
         <router-view />
       </transition>

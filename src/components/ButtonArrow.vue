@@ -1,6 +1,6 @@
 <template>
-  <div class="button mx-auto px-6 py-3">
-    <router-link :to="link" class="flex" :target="target">
+  <div class="button">
+    <router-link :to="link" class="flex px-6 py-3" :target="target">
       <div class="btnContainer">
         <span>{{ title }}</span>
         <img

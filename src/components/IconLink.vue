@@ -1,7 +1,7 @@
 <template>
-  <div class="button mx-auto px-6 py-3">
+  <div class="button">
     <router-link :to="link" class="flex">
-      <div class="btnContainer">
+      <div class="btnContainer px-6 py-3">
         <img
           :src="require('@/assets/images/' + icon + '.svg')"
           type="image/svg+xml"
