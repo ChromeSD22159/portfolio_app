@@ -27,7 +27,6 @@ export default {
   name: 'SkillsPrint',
   components: {
     ButtonArrow,
-
     Skill,
   },
 }

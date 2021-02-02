@@ -15,7 +15,7 @@
         title="Download!"
         icon="Download"
         target="_blank"
-        class="sm:ml-2"
+        class="mb-10 sm:mt-0 mr-2"
       />
     </div>
   </div>

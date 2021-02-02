@@ -23,7 +23,7 @@
         icon="ArrowRight"
       />
     </div>
-    <div class="flex w-full justify-between">
+    <div class="flex w-8/12 justify-between">
       <IconLink link="/" icon="home" />
       <ButtonArrow link="/resume" title="Resume!" icon="ArrowRight" />
     </div>
